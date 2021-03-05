@@ -1,7 +1,7 @@
 import React from 'react';
 import * as math from 'mathjs';
 import './App.css';
-import TextInput from '../../components/TextInput/TextInput';
+import TextInput from '../../components/TextInput';
 import Button from '../../components/Button/Button';
 
 class App extends React.Component {
@@ -41,7 +41,7 @@ class App extends React.Component {
         return (
             <div className="calc">
                 <div className="calc__body">
-                    <TextInput value={input} name="value" readOnly />
+                    <TextInput value={input} name="value" />
 
                     <div className="calc__keys">
                         <Button name="C" handleClick={this.clearInput} classNames={['button--long']} />
