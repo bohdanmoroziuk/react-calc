@@ -1,5 +1,6 @@
 {
   "name": "react-calculator",
+  "description": "A simple calculator written in React using the mathjs library",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,5 +27,6 @@
   ],
   "devDependencies": {
     "prop-types": "^15.6.2"
-  }
+  },
+  "author": "Bogdan Morozyuk <bogdan7morozyuk@gmail.com>"
 }
