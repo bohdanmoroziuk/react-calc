@@ -31,7 +31,7 @@ class App extends React.Component {
 
     removeSymbol = () => {
         this.setState(prevState => ({
-            input: prevState.input.slice(0, -1) || ''
+            input: prevState.input.toString().slice(0, -1) || ''
         }));
     };
 
