@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Button.scss';
+import './Button.css';
 import { classnames } from '../../tools/tools';
 
 const isOperator = value => !isNaN(value) || value === '.' || value === '=';

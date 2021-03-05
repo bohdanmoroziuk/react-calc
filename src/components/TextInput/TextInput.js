@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './TextInput.scss';
+import './TextInput.css';
 
 const TextInput = ({ value, ...restProps }) => (
     <input className="input" type="text" value={value} {...restProps} />

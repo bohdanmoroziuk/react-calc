@@ -1,6 +1,6 @@
 import React from 'react';
 import * as math from 'mathjs';
-import './App.scss';
+import './App.css';
 import TextInput from '../../components/TextInput/TextInput';
 import Button from '../../components/Button/Button';
 
