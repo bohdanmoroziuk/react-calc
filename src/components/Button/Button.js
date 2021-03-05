@@ -1,31 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
+
 import './Button.css';
-import { classnames } from '../../tools/tools';
+import { isOperator } from './utils';
 
-const isOperator = value => !isNaN(value) || value === '.' || value === '=';
-
-const Button = ({ name, classNames, handleClick }) => (
-    <button 
-        className={`${
-            classnames('button', ...classNames)
-        } ${
-            isOperator(name) ? 'button--type-key' : 'button--type-operator'
-        }`} 
-        onClick={handleClick}
-    >
-        {name}
-    </button>
+const Button = ({ long, label, onClick }) => (
+  <button 
+    className={classNames([
+      'button',
+      isOperator(label) 
+        ? 'button--type-key' 
+        : 'button--type-operator', {
+      'button--long': long,
+    }])}
+    onClick={onClick}
+  >
+    {label}
+  </button>
 );
 
 Button.defaultProps = {
-    classNames: ['']
+  long: false
 };
 
 Button.propTypes = {
-    name: PropTypes.string.isRequired,
-    classNames: PropTypes.arrayOf(PropTypes.string),
-    handleClick: PropTypes.func.isRequired
+  long: PropTypes.bool,
+  label: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired
 };
 
 export default Button;

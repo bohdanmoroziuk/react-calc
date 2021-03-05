@@ -2,7 +2,7 @@ import React from 'react';
 import * as math from 'mathjs';
 import './App.css';
 import TextInput from '../../components/TextInput';
-import Button from '../../components/Button/Button';
+import Button from '../../components/Button';
 
 class App extends React.Component {
     constructor(props) {
@@ -44,28 +44,28 @@ class App extends React.Component {
                     <TextInput value={input} name="value" />
 
                     <div className="calc__keys">
-                        <Button name="C" handleClick={this.clearInput} classNames={['button--long']} />
-                        <Button name="R" handleClick={this.removeSymbol} classNames={['button--long']} />
+                        <Button label="C" onClick={this.clearInput} long />
+                        <Button label="R" onClick={this.removeSymbol} long />
 
-                        <Button name="7" handleClick={() => this.addToInput('7')} />
-                        <Button name="8" handleClick={() => this.addToInput('8')} />
-                        <Button name="9" handleClick={() => this.addToInput('9')} />
-                        <Button name="/" handleClick={() => this.addToInput('/')} />
+                        <Button label="7" onClick={() => this.addToInput('7')} />
+                        <Button label="8" onClick={() => this.addToInput('8')} />
+                        <Button label="9" onClick={() => this.addToInput('9')} />
+                        <Button label="/" onClick={() => this.addToInput('/')} />
 
-                        <Button name="4" handleClick={() => this.addToInput('4')} />
-                        <Button name="5" handleClick={() => this.addToInput('5')} />
-                        <Button name="6" handleClick={() => this.addToInput('6')} />
-                        <Button name="*" handleClick={() => this.addToInput('*')} />
+                        <Button label="4" onClick={() => this.addToInput('4')} />
+                        <Button label="5" onClick={() => this.addToInput('5')} />
+                        <Button label="6" onClick={() => this.addToInput('6')} />
+                        <Button label="*" onClick={() => this.addToInput('*')} />
 
-                        <Button name="1" handleClick={() => this.addToInput('1')} />
-                        <Button name="2" handleClick={() => this.addToInput('2')} />
-                        <Button name="3" handleClick={() => this.addToInput('3')} />
-                        <Button name="-" handleClick={() => this.addToInput('-')} />
+                        <Button label="1" onClick={() => this.addToInput('1')} />
+                        <Button label="2" onClick={() => this.addToInput('2')} />
+                        <Button label="3" onClick={() => this.addToInput('3')} />
+                        <Button label="-" onClick={() => this.addToInput('-')} />
 
-                        <Button name="0" handleClick={() => this.addToInput('0')} />
-                        <Button name="." handleClick={() => this.addToInput('.')} />
-                        <Button name="=" handleClick={() => this.solve()} />
-                        <Button name="+" handleClick={() => this.addToInput('+')} />
+                        <Button label="0" onClick={() => this.addToInput('0')} />
+                        <Button label="." onClick={() => this.addToInput('.')} />
+                        <Button label="=" onClick={() => this.solve()} />
+                        <Button label="+" onClick={() => this.addToInput('+')} />
                     </div>
                 </div>
             </div>
