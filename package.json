@@ -1,6 +1,6 @@
 {
   "name": "react-calculator",
-  "description": "A simple calculator written in React using the mathjs library",
+  "description": "The minimum calculator created with React and Mathjs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,6 +1,10 @@
 # React Calc
 
-> A simple calculator written in React using the mathjs library
+> The minimum calculator created with React and Mathjs.
+
+## Preview
+
+<img src="./react-calc.png" alt="React Calc" />
 
 ## Available Scripts
 
